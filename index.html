@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/066acfabc9.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Piyush</span><br> Das From India</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+<!---about-- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate Full Stack Developer with a flair for innovation,
+                    harnessing technology to craft seamless experiences and drive
+                    impactful solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Technikal Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Certification</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, Python, C, JavaScript</li>
+                        <li><span>Backend Tech Stack</span><br>PHP, MySQL</li>
+                        <li><span>Tools & Libraries</span><br>HTML 5, CSS 3, Bootstrap, GIT, Arduino</li>
+                        <li><span>Other Skills</span><br>Robotics, Competitive Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>NPTEL Online Certification</span><br>Programming in Java</li>
+                        <li><span>Udemy</span><br>Python and Django Full Stack Web Developer Bootcamp <br> Python for Data Science and Machine Learning Bootcamp</li>
+                        <li><span>Great Learning</span><br>Java Programming <br> Python
+                        Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Silicon Institute of Technology (2020 - 24)</span><br>B.Tech in Computer Science and
+                            Engineering</li>
+                        <li><span>Chinmaya Vidyalaya (E.M.) (2020)</span><br>Intermediate (+2 Science)</li>
+                        <li><span>Chinmaya Vidyalaya (E.M.) (2018)</span><br>Matriculation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---achievemnets & experiences-- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Achievements & Experiences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-researchgate"></i>
+                <h2>IEEE Conference Presentation</h2>
+                <p>Organized on March 1st and 2nd, 2024, at CV Raman Global University, Bhubaneswar.<br>
+                    Presented a paper titled "An Intelligent Regression Approach for Weather Forecasting System
+                    Using Machine Learning" at the International Conference on Cognitive, Green, and Ubiquitous
+                    Computing (IC-CGU)</p>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10530704&isnumber=10530657" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Codigo Plataforma - Coordinator</h2>
+                <p>As Coordinator at Codigo Plataforma, the official coding club of Silicon Institute of Technology, Sambalpur, I lead
+                strategic planning and execution of coding events, workshops, and competitions. I foster collaboration among members and
+                faculty, promote a vibrant coding culture, and engage external partners for industry talks and hackathons, enhancing the
+                learning experience.</p>
+                <a href="https://www.linkedin.com/posts/piyush-das-ab2241201_codigoplataforma-silicon-sitwest-activity-7111375107775766528-SAKj?utm_source=share&utm_medium=member_desktop" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>PWS Technext - Internship</h2>
+                <p>An internship in Web Development involving hands-on experience and creating live projects.</p>
+                <a href="https://pwstechnext.in/" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---projects-- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Weather Prediction using Machine Learning</h3>
+                    <p>The goal of this project is to develop a model that can accurately predict weather conditions based on historical data.</p>
+                    <a href="https://github.com/Piyush2002dev/Weather-Prediction-using-Machine-Learning.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>A fully functional Landing Page or Log-In Page.</p>
+                    <a href="https://github.com/Piyush2002dev/Landing-Page.git" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Video Conferencing Website</h3>
+                    <p>THere you can try your hands on the video on the video conferencing website and application projects and helps to develop
+                    features like textua chatting, audio & video interactions, video recording, etc.</p>
+                    <a href="https://piyush2002dev.github.io/Video-Conferencing-Website/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Piyush2002dev?tab=repositories" class="btn" target="_blank">See More</a>
+    </div>
+</div>
+
+<!---contact-- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> piyushkumardas2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-9777076552</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/PiyushKumarDas007" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/piyush.kr_2002/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/piyush-das-ab2241201" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Piyush2002dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2" target="_blank">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="thankyou">
+        <p>Thank You</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxn8GIL-0Q-yso59olzBnCw4W0dxztdRvoNs41iQSL0U1njKEN3OGGNP9cThWQOxS8rww/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
