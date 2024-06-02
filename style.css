@@ -181,11 +181,13 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
 }
 .services-list div a{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
     display: inline-block;
+    border-radius: 5px;
 }
 .services-list div:hover{
     background: #ff004f;
@@ -332,58 +334,49 @@ form .btn2{
 }
 
 /*---- css for responsive ---*/
-/* Hide nav .fas icon by default */
-nav .fas {
+
+nav .fa-solid {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
 
-    /* Background image for the header on small screens */
     #header {
         background-image: url(images/phone-background1.png);
     }
 
-    /* Adjust margin and font size for header text */
     .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
 
-    /* Adjust font size for header text h1 */
     .header-text h1 {
         font-size: 30px;
     }
 
-    /* Show nav .fas icon and adjust its size */
-    nav .fas {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
 
-    /* Style the nav ul for small screens */
     nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
-        /* Initially hide off screen */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-        /* Add transition for smooth sliding */
     }
 
-    /* Align nav ul li elements */
     nav ul li {
         display: block;
         margin: 25px;
     }
 
-    /* Position and style the nav .fas icon inside the menu */
-    nav ul .fas {
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
