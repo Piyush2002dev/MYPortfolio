@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/logo2.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -129,19 +129,20 @@
             <div class="work">
                 <img src="images/work2.png">
                 <div class="layer">
-                    <h3>Landing Page</h3>
-                    <p>A fully functional Landing Page or Log-In Page.</p>
-                    <a href="https://github.com/Piyush2002dev/Landing-Page.git" target="_blank"><i
+                    <h3>Educational Institute Website</h3>
+                    <p>A fully functional institute website for RK School of Trading and Investing provides comprehensive information,
+                    resources, and services related to trading and investing education, including course offerings, enrollment options,
+                    expert insights, and contact details.</p>
+                    <a href="https://piyush2002dev.github.io/Institutesite/" target="_blank"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work3.png">
                 <div class="layer">
-                    <h3>Video Conferencing Website</h3>
-                    <p>THere you can try your hands on the video on the video conferencing website and application projects and helps to develop
-                    features like textua chatting, audio & video interactions, video recording, etc.</p>
-                    <a href="https://piyush2002dev.github.io/Video-Conferencing-Website/" target="_blank"><i
+                    <h3>Car Rental Website</h3>
+                    <p>A car rental website for browsing, booking, and managing rentals with real-time availability and pricing.</p>
+                    <a href="https://piyush2002dev.github.io/carbook/" target="_blank"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -211,11 +212,6 @@
     }
 </script>
 
-<form name="submit-to-google-sheet">
-    <input name="email" type="email" placeholder="Email" required>
-    <button type="submit">Send</button>
-</form>
-
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxn8GIL-0Q-yso59olzBnCw4W0dxztdRvoNs41iQSL0U1njKEN3OGGNP9cThWQOxS8rww/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -228,7 +224,7 @@
                 msg.innerHTML = "Message sent successfully"
                 setTimeout(function(){
                     msg.innerHTML = ""
-                },3000)
+                },5000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))

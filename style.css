@@ -15,7 +15,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/img1.png);
+    background-image: url(images/background1.png);
     background-size: cover;
     background-position: center;
 
@@ -341,7 +341,7 @@ nav .fas {
 
     /* Background image for the header on small screens */
     #header {
-        background-image: url(images/phone-background.png);
+        background-image: url(images/phone-background1.png);
     }
 
     /* Adjust margin and font size for header text */
@@ -372,7 +372,7 @@ nav .fas {
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s ;
+        transition: right 0.5s;
         /* Add transition for smooth sliding */
     }
 
@@ -389,30 +389,40 @@ nav .fas {
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
-    .thankyou{
+
+    .thankyou {
         font-size: 14px;
     }
 }
-#msg{
+
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
