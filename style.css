@@ -13,6 +13,7 @@ body {
 }
 
 #header {
+    
     width: 100%;
     height: 100vh;
     background-image: url(images/background1.png);
@@ -33,7 +34,17 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo span {
+    color: #0ef;
 }
 
 nav ul li {
@@ -43,17 +54,24 @@ nav ul li {
 }
 
 nav ul li a {
+    display: inline-block;
     color: #fff;
+    font-weight: 500;
+    text-decoration: none;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
 }
 
 nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #0ef;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,15 +85,25 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: #0ef;
+}
+
+.header-text p span {
+    color: #0ef;
 }
 
 /*----about ---*/
@@ -127,7 +155,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #0ef;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -165,7 +193,7 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background: #1f242d;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -191,9 +219,16 @@ nav ul li a:hover::after {
     border-radius: 5px;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: #0ef;
     transform: translateY(-10px);
+    color: #080808;
 }
+
+.services-list div a:hover {
+    background-color: black;
+    color: #0ef;
+}
+
 
 /*---- projects ---*/
 #portfolio{
@@ -219,7 +254,7 @@ nav ul li a:hover::after {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), black);
+    background: linear-gradient(rgba(0,0,0,0.6), #1f242d);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -240,7 +275,7 @@ nav ul li a:hover::after {
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -260,7 +295,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #0ef;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -268,7 +303,7 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #0ef;
 }
 
 /*---- contact ---*/
@@ -282,7 +317,7 @@ nav ul li a:hover::after {
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #0ef;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -298,12 +333,13 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #0ef;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    color: #080808;
+    background: #0ef;
 }
 .contact-right form{
     width: 100%;
@@ -312,10 +348,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #1f242d;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #0ef;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -329,10 +365,13 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #1f242d;
     font-weight: 300;
     margin-top: 20px;
+    color: #0ef;
 }
+
+
 
 /*---- css for responsive ---*/
 
@@ -361,7 +400,8 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #ff004f;
+        background: #0ef;
+        color: #080808;
         position: fixed;
         top: 0;
         right: -200px;
@@ -376,6 +416,10 @@ nav .fa-solid {
         display: block;
         margin: 25px;
     }
+
+        nav ul li a {
+            color: #080808;
+        }
 
     nav ul .fa-solid {
         position: absolute;
@@ -417,7 +461,45 @@ nav .fa-solid {
 }
 
 #msg {
-    color: #ff004f;
+    color: #0ef;
     margin-top: -40px;
     display: block;
+}
+
+/* Keyframes animation */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
