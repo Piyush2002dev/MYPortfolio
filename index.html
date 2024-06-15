@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/066acfabc9.js" crossorigin="anonymous"></script>
     </head>
 <body>
+
     <div id="header">
         <div class="container">
             <nav>
@@ -27,7 +35,6 @@
                 <h1>Hello, It's Me<span><br> Piyush</span> Das </h1>
                 <p>And I'm a <br><span class="multiple-text"></span></p>
             </div>
-
         </div>
     </div>
 
@@ -151,6 +158,7 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+            
         </div>
         <br>
     </div>
@@ -183,10 +191,13 @@
             </div>
         </div>
     </div>
+                                             
     <div class="thankyou">
         <p>Thank You</p>
     </div>
 </div>
+
+<a href="#" class="top"><i class='fas fa-chevron-up' style='color:#000'></i></a>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="script.js"></script>
@@ -235,6 +246,16 @@
             })
             .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+<script>
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+
+
 </script>
 
 </body>
