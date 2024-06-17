@@ -16,6 +16,8 @@
     </head>
 <body>
 
+    <!-- <div id="preloader"></div> -->
+
     <div id="header">
         <div class="container">
             <nav>
@@ -198,14 +200,16 @@
                 <a href="images/resume.pdf" download class="btn btn2" target="_blank">Download Resume</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-google-sheet">
+                    <input type="hidden" name="access_key" value="9d039c23-2895-4fa7-b4ea-4637b7006976">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
+
         </div>
     </div>
                                              
@@ -246,7 +250,7 @@
     }
 </script>
 
-<script>
+<!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxn8GIL-0Q-yso59olzBnCw4W0dxztdRvoNs41iQSL0U1njKEN3OGGNP9cThWQOxS8rww/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
@@ -263,17 +267,18 @@
             })
             .catch(error => console.error('Error!', error.message))
     })
-</script>
+</script> -->
 
-<script>
+<!-- <script>
 
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function(){
         loader.style.display = "none";
     })
 
+</script> -->
 
-</script>
+
 
 </body>
 </html>
