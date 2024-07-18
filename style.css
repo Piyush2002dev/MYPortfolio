@@ -347,6 +347,11 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
+.contact-left p a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .social-icons {
     margin-top: 30px;
 }
